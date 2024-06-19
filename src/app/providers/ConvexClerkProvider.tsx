@@ -15,6 +15,7 @@ const ConvexClerkProvider = ({ children }: { children: ReactNode }) => (
     appearance={{
       layout: {
         socialButtonsVariant: "iconButton",
+        logoImageUrl: "/icons/logo.svg",
       },
       variables: {
         colorBackground: "#15171c",
