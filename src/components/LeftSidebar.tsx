@@ -22,7 +22,7 @@ const LeftSideBar = () => {
           </h1>
         </Link>
 
-        {sidebarLinks.map((item) => {
+        {sidebarLinks.map((item, key) => {
           const isActive =
             pathname === item.route || pathname.startsWith(`${item.route}/`);
           return (
@@ -34,6 +34,7 @@ const LeftSideBar = () => {
                   "bg-nav-focus border-r-4 border-orange-1": isActive,
                 }
               )}
+              key={key}
             >
               <Image
                 src={item.imgURL}
